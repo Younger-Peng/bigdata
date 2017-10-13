@@ -11,3 +11,8 @@
 .icon-full-screen:hover {
     color: #999 !important
 }
+
+.page:hover {
+    background: #ddd !important;
+    cursor: pointer;
+}

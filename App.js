@@ -27,7 +27,9 @@ class Demo extends Component {
         document.addEventListener('webkitfullscreenchange', () => {
             this.setState({
                 ...this.state,
-                fullScreen: !this.state.fullScreen
+                fullScreen: !this.state.fullScreen,
+                marginTop: 0,
+                currentPage: 1
             })
         })
     }
