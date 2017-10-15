@@ -17,7 +17,7 @@ class ChineseMap extends React.Component {
     render() {
         return (
             <div>
-                <Map handleOnclick={this.handleOnclick.bind(this)}/>
+                <Map handleOnclick={this.handleOnclick.bind(this)} />
             </div>
         )
     }
