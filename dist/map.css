@@ -1,6 +1,9 @@
 path:hover {
-    opacity: 0.5;
     stroke-width: 6px;
     stroke: #eee;
     cursor: pointer;
+}
+
+.shadow {
+    -webkit-filter: drop-shadow( 5px 5px 5px #999 );
 }
