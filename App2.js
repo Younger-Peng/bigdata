@@ -6,7 +6,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import _ from 'lodash';
-import Page from "./components/Page1.jsx";
+import Page from "./components/Page2.jsx";
 import './master.css';
 import './fonts/iconfont.css'
 
