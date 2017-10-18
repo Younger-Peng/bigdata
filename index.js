@@ -4,7 +4,7 @@
 */
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import App from "./ChineseMap";
+import App from "./Editor";
 
 const rootEle = document.getElementById("root");
 ReactDOM.render(<App />, rootEle);
