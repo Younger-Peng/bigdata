@@ -14,7 +14,7 @@ const Map = ({hoverStyle, handleOnclick, handleMouseEnter, handleMouseLeave}) =>
                 {
                     map_info.map((item, index) => {
                         return (
-                            <g key={`${item.province}${index}`} onClick={handleOnclick.bind(null, item.province)} onMouseEnter={handleMouseEnter.bind(null, item.province)} onMouseLeave={handleMouseLeave} >
+                            <g key={`${item.province}${index}`} onClick={handleOnclick.bind(null, item.province)} onMouseEnter={handleMouseEnter.bind(null, item, index)} onMouseLeave={handleMouseLeave} >
                                 <path d={item.d} fill={item.fill} />
                                 <text x={item.textX} y={item.textY} fontSize='8px'>{item.province}</text>
                             </g>
