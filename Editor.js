@@ -22,11 +22,18 @@ class MyEditor extends React.Component {
       this.onChange(RichUtils.toggleInlineStyle(this.state.editorState, 'BOLD'));
   }
 
+  _onH1Click() {
+
+  }
+
   render() {
     return (
         <div>
             <button onClick={this._onBoldClick.bind(this)}>Bold</button>
-            <Editor editorState={this.state.editorState} onChange={this.onChange} handleKeyCommand={this.handleKeyCommand} />
+            <button onClick={this._onH1Click.bind(this)}>H1</button>
+            <div style={{border: '1px solid #ccc', minHeight: '10em', padding: '1em'}}>
+                <Editor editorState={this.state.editorState} onChange={this.onChange} handleKeyCommand={this.handleKeyCommand} />
+            </div>
         </div>
     );
   }
