@@ -5,6 +5,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import App from "./Editor";
+import './master.css';
+import './fonts/iconfont.css';
 
 const rootEle = document.getElementById("root");
 ReactDOM.render(<App />, rootEle);

@@ -16,3 +16,21 @@
     background: #ddd !important;
     cursor: pointer;
 }
+
+table {
+    font-size: 12px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 30px;
+    border: 1px solid #ccc;
+}
+
+tr.table_body:hover {
+    background: #eee;
+}
+
+tfoot td {
+    text-align: center;
+}
