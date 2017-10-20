@@ -3872,6 +3872,12 @@ react-prop-types@^0.4.0:
   dependencies:
     warning "^3.0.0"
 
+react-table@^6.6.0:
+  version "6.6.0"
+  resolved "http://registry.npm.taobao.org/react-table/download/react-table-6.6.0.tgz#a57ffa670f8b06a18235a000315df0deaacc6cdf"
+  dependencies:
+    classnames "^2.2.5"
+
 react@^16.0.0:
   version "16.0.0"
   resolved "http://registry.npm.taobao.org/react/download/react-16.0.0.tgz#ce7df8f1941b036f02b2cca9dbd0cb1f0e855e2d"

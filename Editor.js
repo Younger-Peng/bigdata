@@ -63,10 +63,10 @@ var tableData = {
 var tableData1 = {
     tableHeader: [
         [
-            {id: 'name', name: 'Name', ifSort: false},
+            {id: 'name', name: 'Name', ifSort: false, dataFormats: fn3},
             {id: 'age', name: 'Age', ifSort: true},
-            {id: 'gender', name: 'Gender', ifSort: false, dataFormat: fn2},
-            {id: 'mark_rate', name: '得分率', ifSort: true, needCompare: true, dataFormat: fn1}
+            {id: 'gender', name: 'Gender', ifSort: false, dataFormats: fn2},
+            {id: 'mark_rate', name: '得分率', ifSort: true, needCompare: true, dataFormats: fn1}
         ]
     ],
     tableBody: [
@@ -90,4 +90,12 @@ function fn2(data) {
         Female: ' o'
     }
     return data + suffix[data]
+}
+
+function fn3(data) {
+    return (
+        <span style={{position: 'absolute', left: 30}}>
+            {data}
+        </span>
+    )
 }

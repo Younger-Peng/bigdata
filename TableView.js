@@ -60,7 +60,7 @@ class TableView1 extends React.Component {
             tableBody = _.orderBy(tableBody,[sortKey], [sortDir])
         }
         return (
-            <div>
+            <div style={{overflow: 'auto', position: 'relative'}}>
                 <div>
                     <button onClick={this.handleDownload.bind(this)}>下载表格</button>
                 </div>
@@ -90,9 +90,9 @@ class TableView1 extends React.Component {
                                     <tr key={`row${rowIndex}`} className={hover ? 'table_body' : ''}>
                                         {_.map(headerIds, (id, colIndex) => {
                                             var value = bodyRow[id], currentStyle = {}
-                                            var {dataFormat, needCompare} = tableHeader[0][colIndex]
-                                            if(dataFormat) {
-                                                value = dataFormat(value)
+                                            var {dataFormats, needCompare} = tableHeader[0][colIndex]
+                                            if(dataFormats) {
+                                                value = dataFormats(value)
                                             }
                                             if(needCompare) {
                                                 if(bodyRow[id] < tableBody[0][id]) {
