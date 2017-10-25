@@ -4,7 +4,7 @@
 */
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import App from "./Editor";
+import App from "./FinalView";
 import './master.css';
 import './fonts/iconfont.css';
 
