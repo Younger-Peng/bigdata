@@ -359,7 +359,7 @@ class ModuleContainer extends React.Component {
             <div>
                 <button onClick={this.handleDownload.bind(this)}>下载表格</button>
                 <div style={{display: 'flex', width: 400}}>
-                    <div>
+                    <div style={{boxShadow: '3px 0 3px 0 #eee', position: 'relative', zIndex: 1}}>
                         <TableView2 headerData={FrozenTableHeader} bodyData={TableBodys} stickyTotal={true} sortKey={sortKey} sortDir={sortDir} showDownload={false} handleSort={this.handleSort.bind(this)}/>
                     </div>
                     <div style={{flex: 1, overflow: 'auto'}}>
